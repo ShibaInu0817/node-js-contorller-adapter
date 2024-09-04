@@ -1,0 +1,24 @@
+{
+  "name": "node-js-controller-adapter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:express": "node dist/app/express/expressApp.js",
+    "dev:express": "ts-node -P tsconfig.json src/app/express/expressApp.ts",
+    "start:fastify": "node dist/app/fastify/fastifyApp.js",
+    "dev:fastify": "ts-node -P tsconfig.json src/app/fastify/fastifyApp.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

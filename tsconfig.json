@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "files": [
+    "src/app/express/express-custom-modules.d.ts",
+    "src/app/fastify/fastify-custom-modules.d.ts"
+  ],
+  "include": [
+    "src/**/**/*.ts",
+    "src/**/**/*.d.ts" // Include all .d.ts files in the src directory
+  ],
+  "exclude": ["node_modules"]
+}
